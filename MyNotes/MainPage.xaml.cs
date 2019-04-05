@@ -28,7 +28,8 @@ namespace MyNotes
             WebContentLayout.Children.Add(web);
             btnYellow.Pressed += (sender, e) => ShowHideNote("yellow", web);
             btnBlue.Pressed += (sender, e) => ShowHideNote("blue", web);
-            
+            btnOrange.Pressed += (sender, e) => ShowHideNote("orange", web);
+
             BookCounter = 0;
 
         }
