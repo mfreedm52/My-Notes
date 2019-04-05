@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyNotes"
+             x:Class="MyNotes.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout x:Name="Layout">
+            <StackLayout x:Name="WebContentLayout">
+            </StackLayout>
+            <Grid x:Name="ButtonGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55"/>
+                </Grid.RowDefinitions>
+                <Button x:Name="btnBlue" Text="Show/Hide Blue" Grid.Row="0" BackgroundColor="LightBlue" Grid.Column="0"></Button>
+                <Button x:Name="btnYellow" Text="Show/Hide Yellow" Grid.Row="0" BackgroundColor="Yellow" Grid.Column="1"></Button>
+            </Grid>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
